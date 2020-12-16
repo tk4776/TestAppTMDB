@@ -1,4 +1,4 @@
-package com.marp.testapptmdb.single_movie
+package com.marp.testapptmdb.ui.single_movie
 
 import androidx.lifecycle.LiveData
 import com.marp.testapptmdb.data.api.TMDBInterface

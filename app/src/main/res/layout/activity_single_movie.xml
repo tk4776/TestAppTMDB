@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".single_movie.SingleMovie">
+    tools:context=".ui.single_movie.SingleMovie">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/linearlayout"
+                android:id="@+id/linear_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
