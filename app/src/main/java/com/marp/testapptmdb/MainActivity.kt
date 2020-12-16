@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.marp.testapptmdb.ui.home.popular_movie.Movies
 import com.marp.testapptmdb.ui.home.single_movie.SingleMovie
+import com.marp.testapptmdb.ui.map.MapFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,8 +29,8 @@ class MainActivity : AppCompatActivity() {
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener{ view ->
-            val intent = Intent(this, Movies::class.java)
-            intent.putExtra("id", 590706)
+            val intent = Intent(this, SingleMovie::class.java)
+            intent.putExtra("id", 666666)
             this.startActivity(intent)/*view ->
             Snackbar.make(view, "More coming soon", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_map), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
@@ -57,4 +58,5 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }
