@@ -31,10 +31,7 @@ class MainActivity : AppCompatActivity() {
         fab.setOnClickListener{ view ->
             val intent = Intent(this, SingleMovie::class.java)
             intent.putExtra("id", 666666)
-            this.startActivity(intent)/*view ->
-            Snackbar.make(view, "More coming soon", Snackbar.LENGTH_LONG)
-                .setAction("Action", null)
-                .show()*/
+            this.startActivity(intent)
         }
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
