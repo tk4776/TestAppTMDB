@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.single_movie.SingleMovie">
+    tools:context=".ui.home.single_movie.SingleMovie">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -6,32 +6,14 @@ import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
 import com.marp.testapptmdb.data.repository.NetworkState
 import com.marp.testapptmdb.data.vo.Movie
-import com.marp.testapptmdb.ui.popular_movie.MoviePagedRepository
+import com.marp.testapptmdb.ui.home.popular_movie.MoviePagedRepository
 import io.reactivex.disposables.CompositeDisposable
 
-class HomeViewModel(private val movieRepository: MoviePagedRepository) : ViewModel() {
-
-    private val compositeDisposable = CompositeDisposable()
-
-    val moviePagedList: LiveData<PagedList<Movie>> by lazy {
-        movieRepository.fetchLiveMoviePagedList(compositeDisposable)
-    }
-
-    val networkState: LiveData<NetworkState> by lazy {
-        movieRepository.getNetworkState()
-    }
-
-    fun listIsEmpty(): Boolean {
-        return moviePagedList.value?.isEmpty() ?: true
-    }
+class HomeViewModel(): ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"
     }
     val text: LiveData<String> = _text
 
-    override fun onCleared() {
-        super.onCleared()
-        compositeDisposable.dispose()
-    }
 }

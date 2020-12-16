@@ -1,4 +1,4 @@
-package com.marp.testapptmdb.ui.popular_movie
+package com.marp.testapptmdb.ui.home.popular_movie
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations

@@ -13,8 +13,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.google.android.material.snackbar.Snackbar
-import com.marp.testapptmdb.ui.single_movie.SingleMovie
+import com.marp.testapptmdb.ui.home.popular_movie.Movies
+import com.marp.testapptmdb.ui.home.single_movie.SingleMovie
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener{ view ->
-            val intent = Intent(this, SingleMovie::class.java)
-            intent.putExtra("id",590706)
+            val intent = Intent(this, Movies::class.java)
+            intent.putExtra("id", 590706)
             this.startActivity(intent)/*view ->
             Snackbar.make(view, "More coming soon", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)

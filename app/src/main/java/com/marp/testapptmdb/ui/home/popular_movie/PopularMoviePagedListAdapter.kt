@@ -1,4 +1,4 @@
-package com.marp.testapptmdb.ui.popular_movie
+package com.marp.testapptmdb.ui.home.popular_movie
 
 import android.content.Context
 import android.content.Intent
@@ -15,7 +15,7 @@ import com.marp.testapptmdb.R
 import com.marp.testapptmdb.data.api.POSTER_BASE_URL
 import com.marp.testapptmdb.data.repository.NetworkState
 import com.marp.testapptmdb.data.vo.Movie
-import com.marp.testapptmdb.ui.single_movie.SingleMovie
+import com.marp.testapptmdb.ui.home.single_movie.SingleMovie
 
 class PopularMoviePagedListAdapter(public val context: Context): PagedListAdapter<Movie, RecyclerView.ViewHolder>(MovieDiffCallback()) {
 

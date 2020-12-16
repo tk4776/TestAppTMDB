@@ -1,4 +1,4 @@
-package com.marp.testapptmdb.ui.single_movie
+package com.marp.testapptmdb.ui.home.single_movie
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
