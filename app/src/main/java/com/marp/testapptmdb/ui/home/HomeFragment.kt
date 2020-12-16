@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
         homeViewModel =
                 ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
+        /*val textView: TextView = root.findViewById(R.id.text_home)
         val btn: Button = root.findViewById(R.id.see_movies)
         btn.setOnClickListener{view->
             Snackbar.make(view, "Presionado", Snackbar.LENGTH_LONG)
@@ -40,7 +40,7 @@ class HomeFragment : Fragment() {
 
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
-        })
+        })*/
 
         return root
     }
