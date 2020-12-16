@@ -52,31 +52,21 @@ class SingleMovie : AppCompatActivity() {
 
     fun bindUI(it: MovieDetails) {
 
-        val movie_title: TextView = findViewById(R.id.movie_title) as TextView
-        val movie_tagline: TextView = findViewById(R.id.movie_tagline) as TextView
-        val movie_release_date: TextView = findViewById(R.id.movie_release_date) as TextView
-        val movie_rating: TextView = findViewById(R.id.movie_rating) as TextView
-        val movie_runtime: TextView = findViewById(R.id.movie_runtime) as TextView
-        val movie_overview: TextView = findViewById(R.id.movie_overview) as TextView
-        val movie_budget: TextView = findViewById(R.id.movie_overview) as TextView
-        val movie_revenue: TextView = findViewById(R.id.movie_title) as TextView
-        val movie_poster: ImageView = findViewById(R.id.movie_poster) as ImageView
-
-        movie_title.text = it.title
-        movie_tagline.text = it.tagline
-        movie_release_date.text = it.releaseDate
-        movie_rating.text = it.voteAverage.toString()
-        movie_runtime.text = it.runtime.toString() + "minutes"
-        movie_overview.text = it.overview
+        findViewById<TextView>(R.id.movie_title).text = it.title
+        findViewById<TextView>(R.id.movie_tagline).text = it.tagline
+        findViewById<TextView>(R.id.movie_release_date).text = it.releaseDate
+        findViewById<TextView>(R.id.movie_rating).text = it.voteAverage.toString()
+        findViewById<TextView>(R.id.movie_runtime).text = it.runtime.toString() + "minutes"
+        findViewById<TextView>(R.id.movie_overview).text = it.overview
 
         val formatCurrency: NumberFormat = NumberFormat.getCurrencyInstance(Locale.US)
-        movie_budget.text = formatCurrency.format(it.budget)
-        movie_revenue.text = formatCurrency.format(it.revenue)
+        findViewById<TextView>(R.id.movie_budget).text = formatCurrency.format(it.budget)
+        findViewById<TextView>(R.id.movie_revenue).text = formatCurrency.format(it.revenue)
 
         val moviePosterURL: String = POSTER_BASE_URL + it.posterPath
         Glide.with(this)
             .load(moviePosterURL)
-            .into(movie_poster);
+            .into(findViewById<ImageView>(R.id.movie_poster));
     }
 
     /**
