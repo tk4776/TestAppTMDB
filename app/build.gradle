@@ -96,4 +96,8 @@ dependencies {
     // Firebase
     implementation platform('com.google.firebase:firebase-bom:26.1.1')
     implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // FIRESTORE
+    implementation 'com.google.firebase:firebase-firestore:21.2.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx:21.2.1'
 }
