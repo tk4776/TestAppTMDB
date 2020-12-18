@@ -56,9 +56,9 @@ _This project was made using:_
 * [Kotlin](http://www.dropwizard.io/1.0.2/docs/) - As main languaje
 * [Reactivex/RxJava](https://github.com/ReactiveX/RxJava) - For asynchronous events, version 2.X and 3.X were used 
 * [Gson](https://github.com/google/gson) - To convert Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object.
-* [Glide] (https://github.com/bumptech/glide) - For image visualization
-* [Paging] (https://developer.android.com/topic/libraries/architecture/paging) - To load small chunks of data at a time
-* [RxAndroid] (https://github.com/ReactiveX/RxAndroid) - Easy way to write reactive components
+* [Glide](https://github.com/bumptech/glide) - For image visualization
+* [Paging](https://developer.android.com/topic/libraries/architecture/paging) - To load small chunks of data at a time
+* [RxAndroid](https://github.com/ReactiveX/RxAndroid) - Easy way to write reactive components
 
 
 ## Authors ✒️
